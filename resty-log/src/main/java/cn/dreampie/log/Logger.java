@@ -12,7 +12,7 @@ public abstract class Logger {
   private static LoggerProvider loggerProvider;
 
   static {
-    try {
+    try { 
       Class.forName("org.slf4j.Logger");
       loggerProvider = new Slf4jLoggerProvider();
     } catch (ClassNotFoundException ex) {
